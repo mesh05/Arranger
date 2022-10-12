@@ -1,7 +1,9 @@
 import numpy as np
 import pandas as pd
 import openpyxl as pp
-lec = pd.DataFrame(columns = ['name','age','roll'])
+n = 3                                    # can use n=(max_index-1)/7
+df = pd.read_excel("timetable.xlsx")     # where max_index is highest index in excel sheet
+lec = pd.DataFrame(columns = ['name','age','roll','room'])
 d = input("Enter day:")
 x = int(input("Starting period:"))
 y = int(input("Ending period:"))
